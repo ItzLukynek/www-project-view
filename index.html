@@ -4,11 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CinemaGo</title>
+    <link rel="stylesheet" href="styles/themplate.css">
     <link rel="stylesheet" href="styles/index_style.css">
+    <script src="js/menu.js" defer></script>
+    <script src="https://kit.fontawesome.com/8cb19e38e8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <head>
+    <section class="bodywrap">
+        <header>
+            <div class="topbar">
+                <div class="topbar_item">
+                    <div>
+                        <a href="index.html"><h2 class="logo_text">CinemaGO</h2></a>
+                    </div>
+                </div>
+                <div class="topbar_item">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="login">
+                        <a href="view/login.html">Přihlásit</a>
+                    </div>
+                    <div class="register">
+                        <a href="view/registration.html">Registrovat se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="view/films.html">Filmy</a></li>
+                        <li></li>
+                        <li><a href="#">Program</a></li>
+                        <li></li>
+                        <li><a href="#">Koupit lístky</a></li>
+                        <li></li>
+                        <li><a href="#">Rezervace</a></li>
+                        
+                        
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-bars hamburger"></i>
+            </div>
+            <div class="menu-mobile">
+                <h2 class="burger-title">CinemaGO</h2>
+                <i class="fa-solid fa-xmark close-btn"></i>
+
+                <nav>
+                    <ul>
+                        <li><a href="view/films.html">Filmy</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Koupit lístky</a></li>
+                        <li><a href="#">Rezervace</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <section>
+                <div class="bg_image">
+                    <div class="bg_image_overlay">
+                       
+                    </div>
+                </div>
+            </section>
+        </header>
         
-    </head>
+        <main>
+            
+            <section class="movie_cards">
+                <div class="title_text_wrapper">
+                    <h2 class="title_text">NEJNOVĚJŠÍ FILMY</h2>
+                </div>
+                <section class="cards_wrapper">
+                    <article class="movie_card">
+                        <div class="img_wrapper">
+                            <img src="public/images/film_posters/venom.jpg" alt="venom poster">
+                        </div>
+                        <div class="movie_card_body">
+                            <h2>Venom</h2>
+                            <button>Promítaní</button>
+                            <button>Koupit lístky</button>
+                        </div>
+                    </article>
+                    <article class="movie_card">
+                        <div class="img_wrapper">
+                            <img src="public/images/film_posters/deadpool.png" alt="venom poster">
+                        </div>
+                        <div class="movie_card_body">
+                            <h2>Deadpool & Wolverine</h2>
+                            <button>Promítaní</button>
+                            <button>Koupit lístky</button>
+                        </div>
+                    </article>
+                    <article class="movie_card">
+                        <div class="img_wrapper">
+                            <img src="public/images/film_posters/endgame.jpg" alt="venom poster">
+                        </div>
+                        <div class="movie_card_body">
+                            <h2>Avengers: Endgame</h2>
+                            <button>Promítaní</button>
+                            <button>Koupit lístky</button>
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <section class="under_cards">
+                <div>
+                    <h2>Hledáte konkrétní film ?</h2>    
+                </div>
+                <div class="search-container_wrap">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Vyhledávejte v naší databázi filmů">
+                        <button class="search-button">&#128269;</button>
+                    </div>
+                </div>
+            </section>
+            <section class="film_design">
+                <div class="film_image">
+    
+                </div>
+            </section>
+            <section class="registration">
+                <div class="container">
+                    <div class="image-section">
+                        <div class="bg_image_overlay">
+                            <div class="text-overlay">
+                                <h1>ZAREGISTRUJ SE</h1>
+                                <p>&</p>
+                                <h1>ZÍSKEJ BONUS</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="content-section">
+                        <p>Registruj se ještě dnes a získej bonusy! Za každý nákup získáš body a až jich nasbíráš 10, tak dostaneš FREE popcorn!</p>
+                        <button>Registrovat se</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-top">
+                <div class="links">
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href="">Program</a>
+                            </li>
+                            <li>
+                                <a href="view/films.html">Filmy</a>
+                            </li>
+                            <li>
+                                <a href="">Koupit lístky</a>
+                            </li>
+                            <li>
+                               <a href=""> Rezervace</a>
+                            </li>
+                        </ul>
+                        <ul >
+                            <li>
+                                <a href="">Registrovat se</a>
+                            </li>
+                            <li>
+                                <a href="">Přihlásit se</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fot-container">
+                        <div class="search-container_wrap">
+                            <div class="search-container">
+                                <input type="text" class="search-input" placeholder="Vyhledávejte v naší databázi filmů">
+                                <button class="search-button">&#128269;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-img">
+    
+                </div>
+            </section>
+            
+    
+        </footer>
+    </section>
 </body>
 </html>
