@@ -1,235 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CinemaGo Filmy</title>
-    <link rel="stylesheet" href="../styles/themplate.css">
-    <link rel="stylesheet" href="../styles/films.css">
-    <script src="../js/menu.js" defer></script>
-    <script src="https://kit.fontawesome.com/8cb19e38e8.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinemaGo Filmy</title>
+  <link rel="stylesheet" href="../styles/themplate.css">
+  <link rel="stylesheet" href="../styles/films.css">
+  <script src="../js/menu.js" defer></script>
+  <script src="https://kit.fontawesome.com/8cb19e38e8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="bodywrap">
-        <header>
-            <div class="topbar">
-                <div class="topbar_item">
-                    <div>
-                        <a href="../index.html"><h2 class="logo_text">CinemaGO</h2></a>
-                    </div>
-                </div>
-                <div class="topbar_item">
-                    <i class="fa-solid fa-user"></i>
-                    <div class="login">
-                        <a href="view/login.html">Přihlásit</a>
-                    </div>
-                    <div class="register">
-                        <a href="view/registration.html">Registrovat se</a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="#">Filmy</a></li>
-                        <li></li>
-                        <li><a href="#">Program</a></li>
-                        <li></li>
-                        <li><a href="#">Koupit lístky</a></li>
-                        <li></li>
-                        <li><a href="#">Rezervace</a></li>
-                        
-                        
-                    </ul>
-                </nav>
-                <i class="fa-solid fa-bars hamburger"></i>
-            </div>
-            <div class="menu-mobile">
-                <h2 class="burger-title">CinemaGO</h2>
-                <i class="fa-solid fa-xmark close-btn"></i>
+  <header>
+    <div class="topbar">
+      <div class="topbar-item">
+        <div>
+          <a href="../index.html">
+            <h2 class="logo-text">CinemaGO</h2>
+          </a>
+        </div>
+      </div>
+      <div class="topbar-item">
+        <i class="fa-solid fa-user"></i>
+        <div class="login">
+          <a href="login.html">Přihlásit</a>
+        </div>
+        <div class="register">
+          <a href="registration.html">Registrovat se</a>
+        </div>
+      </div>
+    </div>
+    <span class="placeholder"></span>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="films.html">Filmy</a></li>
+          <li></li>
+          <li><a href="program.html">Program</a></li>
+          <li></li>
+          <li><a href="#">Koupit lístky</a></li>
+          <li></li>
+          <li><a href="#">Rezervace</a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars hamburger"></i>
+    </div>
+    <div class="menu-mobile">
+      <h2 class="burger-title">CinemaGO</h2>
+      <i class="fa-solid fa-xmark close-btn"></i>
 
-                <nav>
-                    <ul>
-                        <li><a href="#">Filmy</a></li>
-                        <li><a href="#">Program</a></li>
-                        <li><a href="#">Koupit lístky</a></li>
-                        <li><a href="#">Rezervace</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <section>
-                <div class="bg_image">
-                    <div class="bg_image_overlay">
-                       
-                    </div>
-                </div>
-            </section>
-        </header>
-        
-        <main>
-            <section>
-                <h2>Právě vysílané</h2>
-                <div class="movie-grid">
-                  <!-- Movie Cards -->
-                  <article class="movie-card-container">
-                    <div class="movie-card">
-                      <img src="../public/images/film_posters/gladiator2.jpg" alt="Gladiator 2 Poster" class="movie-poster">
-                      <div class="hover-overlay">
-                        <div class="button-group">
-                          <button class="btn">Program</button>
-                          <button class="btn">Rezervace</button>
-                          <button class="btn">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="movie-title">Gladiator 2</h3>
-                  </article>
-            
-                  <article class="movie-card-container">
-                    <div class="movie-card">
-                      <img src="../public/images/film_posters/deadpool.png" alt="Deadpool Poster" class="movie-poster">
-                      <div class="hover-overlay">
-                        <div class="button-group">
-                          <button class="btn">Program</button>
-                          <button class="btn">Rezervace</button>
-                          <button class="btn">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="movie-title">Deadpool</h3>
-                  </article>
-            
-                  <article class="movie-card-container">
-                    <div class="movie-card">
-                      <img src="../public/images/film_posters/endgame.jpg" alt="Endgame Poster" class="movie-poster">
-                      <div class="hover-overlay">
-                        <div class="button-group">
-                          <button class="btn">Program</button>
-                          <button class="btn">Rezervace</button>
-                          <button class="btn">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="movie-title">Endgame</h3>
-                  </article>
-            
-                  <article class="movie-card-container">
-                    <div class="movie-card">
-                      <img src="../public/images/film_posters/smile.jpg" alt="Smile Poster" class="movie-poster">
-                      <div class="hover-overlay">
-                        <div class="button-group">
-                          <button class="btn">Program</button>
-                          <button class="btn">Rezervace</button>
-                          <button class="btn">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="movie-title">Smile</h3>
-                  </article>
-            
-                  <article class="movie-card-container">
-                    <div class="movie-card">
-                      <img src="../public/images/film_posters/venom.jpg" alt="Venom Poster" class="movie-poster">
-                      <div class="hover-overlay">
-                        <div class="button-group">
-                          <button class="btn">Program</button>
-                          <button class="btn">Rezervace</button>
-                          <button class="btn">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="movie-title">Venom</h3>
-                  </article>
-                  <article class="movie-card-container">
-                    <div class="movie-card">
-                      <img src="../public/images/film_posters/venom.jpg" alt="Venom Poster" class="movie-poster">
-                      <div class="hover-overlay">
-                        <div class="button-group">
-                          <button class="btn">Program</button>
-                          <button class="btn">Rezervace</button>
-                          <button class="btn">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="movie-title">Venom</h3>
-                  </article>
-                  <article class="movie-card-container">
-                    <div class="movie-card">
-                      <img src="../public/images/film_posters/thewildrobot.jpg" alt="Venom Poster" class="movie-poster">
-                      <div class="hover-overlay">
-                        <div class="button-group">
-                          <button class="btn">Program</button>
-                          <button class="btn">Rezervace</button>
-                          <button class="btn">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="movie-title">The wild robot</h3>
-                  </article>
-                </div>
-              </section>
-            <section>
-                <h2>Brzy v kinech</h2>
-                <article class="movie-card-container">
-                    <div class="movie-card">
-                      <img src="movie-poster.jpg" alt="Movie Poster" class="movie-poster">
-                      <div class="hover-overlay">
-                        <div class="button-group">
-                          <button class="btn">Program</button>
-                          <button class="btn">Rezervace</button>
-                          <button class="btn">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="movie-title">Movie Title</h3>
-                  </article>
-            </section>
-            
-        </main>
-        <footer>
-            <section class="footer-top">
-                <div class="links">
-                    <div class="footer-links">
-                        <ul>
-                            <li>
-                                <a href="">Program</a>
-                            </li>
-                            <li>
-                                <a href="">Filmy</a>
-                            </li>
-                            <li>
-                                <a href="">Koupit lístky</a>
-                            </li>
-                            <li>
-                               <a href=""> Rezervace</a>
-                            </li>
-                        </ul>
-                        <ul >
-                            <li>
-                                <a href="">Registrovat se</a>
-                            </li>
-                            <li>
-                                <a href="">Přihlásit se</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="fot-container">
-                        <div class="search-container_wrap">
-                            <div class="search-container">
-                                <input type="text" class="search-input" placeholder="Vyhledávejte v naší databázi filmů">
-                                <button class="search-button">&#128269;</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-img">
-    
-                </div>
-            </section>
-            
-    
-        </footer>
+      <nav>
+        <ul>
+          <li><a href="films.html">Filmy</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="#">Koupit lístky</a></li>
+          <li><a href="#">Rezervace</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section>
+      <div class="bg-image">
+        <div class="bg-image-overlay">
+
+        </div>
+      </div>
     </section>
+  </header>
+
+  <main>
+    <section class="movies-now">
+      <div class="movies-bg">
+        <div class="bg-image-overlay">
+          <div class="movie-bar">
+            <h2 class="title">PRÁVĚ VYSÍLANÉ</h2>
+            <div class="search-container-wrap">
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Vyhledávejte v naší databázi filmů">
+                <button class="search-button">&#128269;</button>
+              </div>
+            </div>
+          </div>
+          <div class="movie-grid">
+            <article class="movie-card-container">
+              <div class="movie-card">
+                <img src="../public/images/film_posters/gladiator2.jpg" alt="Gladiator 2 Poster" class="movie-poster">
+                <div class="hover-overlay">
+                  <div class="button-group">
+                    <button class="btn">Program</button>
+                    <button class="btn">Rezervace</button>
+                    <button class="btn">Info</button>
+                  </div>
+                </div>
+              </div>
+              <h3 class="movie-title">Gladiator 2</h3>
+            </article>
+
+            <article class="movie-card-container">
+              <div class="movie-card">
+                <img src="../public/images/film_posters/deadpool.png" alt="Deadpool Poster" class="movie-poster">
+                <div class="hover-overlay">
+                  <div class="button-group">
+                    <button class="btn">Program</button>
+                    <button class="btn">Rezervace</button>
+                    <button class="btn">Info</button>
+                  </div>
+                </div>
+              </div>
+              <h3 class="movie-title">Deadpool</h3>
+            </article>
+
+            <article class="movie-card-container">
+              <div class="movie-card">
+                <img src="../public/images/film_posters/endgame.jpg" alt="Endgame Poster" class="movie-poster">
+                <div class="hover-overlay">
+                  <div class="button-group">
+                    <button class="btn">Program</button>
+                    <button class="btn">Rezervace</button>
+                    <button class="btn">Info</button>
+                  </div>
+                </div>
+              </div>
+              <h3 class="movie-title">Endgame</h3>
+            </article>
+
+            <article class="movie-card-container">
+              <div class="movie-card">
+                <img src="../public/images/film_posters/smile.jpg" alt="Smile Poster" class="movie-poster">
+                <div class="hover-overlay">
+                  <div class="button-group">
+                    <button class="btn">Program</button>
+                    <button class="btn">Rezervace</button>
+                    <button class="btn">Info</button>
+                  </div>
+                </div>
+              </div>
+              <h3 class="movie-title">Smile</h3>
+            </article>
+
+            <article class="movie-card-container">
+              <div class="movie-card">
+                <img src="../public/images/film_posters/venom.jpg" alt="Venom Poster" class="movie-poster">
+                <div class="hover-overlay">
+                  <div class="button-group">
+                    <button class="btn">Program</button>
+                    <button class="btn">Rezervace</button>
+                    <button class="btn">Info</button>
+                  </div>
+                </div>
+              </div>
+              <h3 class="movie-title">Venom</h3>
+            </article>
+
+            <article class="movie-card-container">
+              <div class="movie-card">
+                <img src="../public/images/film_posters/thewildrobot.jpg" alt="Venom Poster" class="movie-poster">
+                <div class="hover-overlay">
+                  <div class="button-group">
+                    <button class="btn">Program</button>
+                    <button class="btn">Rezervace</button>
+                    <button class="btn">Info</button>
+                  </div>
+                </div>
+              </div>
+              <h3 class="movie-title">The wild robot</h3>
+            </article>
+          </div>
+        </div>
+    </section>
+    <section class="movies-soon">
+      <h2 class="title">BRZY V KINECH</h2>
+      <div class="movie-grid">
+        <article class="movie-card-container">
+          <div class="movie-card">
+            <img src="../public/images/film_posters/soon/moana2.jpg" alt="Gladiator 2 Poster" class="movie-poster">
+            <div class="hover-overlay">
+              <div class="button-group">
+                <button class="btn">Program</button>
+                <button class="btn">Rezervace</button>
+                <button class="btn">Info</button>
+              </div>
+            </div>
+          </div>
+          <h3 class="movie-title">Moana 2</h3>
+        </article>
+
+        <article class="movie-card-container">
+          <div class="movie-card">
+            <img src="../public/images/film_posters/soon/mufasa.jpg" alt="Deadpool Poster" class="movie-poster">
+            <div class="hover-overlay">
+              <div class="button-group">
+                <button class="btn">Program</button>
+                <button class="btn">Rezervace</button>
+                <button class="btn">Info</button>
+              </div>
+            </div>
+          </div>
+          <h3 class="movie-title">Mufasa</h3>
+        </article>
+
+        <article class="movie-card-container">
+          <div class="movie-card">
+            <img src="../public/images/film_posters/soon/sonic.jpg" alt="Endgame Poster" class="movie-poster">
+            <div class="hover-overlay">
+              <div class="button-group">
+                <button class="btn">Program</button>
+                <button class="btn">Rezervace</button>
+                <button class="btn">Info</button>
+              </div>
+            </div>
+          </div>
+          <h3 class="movie-title">Sonic 3</h3>
+        </article>
+
+        <article class="movie-card-container">
+          <div class="movie-card">
+            <img src="../public/images/film_posters/soon/intersteal10aniversary.jpeg" alt="Smile Poster"
+              class="movie-poster">
+            <div class="hover-overlay">
+              <div class="button-group">
+                <button class="btn">Program</button>
+                <button class="btn">Rezervace</button>
+                <button class="btn">Info</button>
+              </div>
+            </div>
+          </div>
+          <h3 class="movie-title">Interstellar 10 let</h3>
+        </article>
+
+        <article class="movie-card-container">
+          <div class="movie-card">
+            <img src="../public/images/film_posters/venomlast.jpg" alt="Venom Poster" class="movie-poster">
+            <div class="hover-overlay">
+              <div class="button-group">
+                <button class="btn">Program</button>
+                <button class="btn">Rezervace</button>
+                <button class="btn">Info</button>
+              </div>
+            </div>
+          </div>
+          <h3 class="movie-title">Venom 3</h3>
+        </article>
+    </section>
+    <section class="buy-tickets">
+      <div class="tickets-bg">
+        <div class="tickets-overlay">
+          <article class="tickets-content-wrapper">
+            <div class="tickets-content">
+              <h2 class="tickets-title">Zažijte kouzlo filmu</h2>
+              <p class="tickets-text">
+                Nezmeškejte nejnovější filmové trháky! Získejte své lístky ještě dnes a užijte si nezapomenutelný filmový zážitek s vašimi blízkými. Kapacita je omezená... Neváhejte!
+              </p>
+              <div class="tickets-button">
+                <button class="btn btn-buy">Koupit lístky</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+    <section class="footer-top">
+      <div class="links">
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="program.html">Program</a>
+            </li>
+            <li>
+              <a href="films.html">Filmy</a>
+            </li>
+            <li>
+              <a href="">Koupit lístky</a>
+            </li>
+            <li>
+              <a href=""> Rezervace</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="registration.html">Registrovat se</a>
+            </li>
+            <li>
+              <a href="login.html">Přihlásit se</a>
+            </li>
+          </ul>
+        </div>
+        <div class="fot-container">
+          <div class="search-container-wrap">
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Vyhledávejte v naší databázi filmů">
+              <button class="search-button">&#128269;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-img">
+      </div>
+    </section>
+  </footer>
 </body>
 </html>

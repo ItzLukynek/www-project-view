@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinemaGo Filmy</title>
+  <link rel="stylesheet" href="../styles/themplate.css">
+  <link rel="stylesheet" href="../styles/program.css">
+  <script src="../js/menu.js" defer></script>
+  <script src="https://kit.fontawesome.com/8cb19e38e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="topbar-item">
+        <div>
+          <a href="../index.html">
+            <h2 class="logo-text">CinemaGO</h2>
+          </a>
+        </div>
+      </div>
+      <div class="topbar-item">
+        <i class="fa-solid fa-user"></i>
+        <div class="login">
+          <a href="login.html">Přihlásit</a>
+        </div>
+        <div class="register">
+          <a href="registration.html">Registrovat se</a>
+        </div>
+      </div>
+    </div>
+    <span class="placeholder"></span>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="films.html">Filmy</a></li>
+          <li></li>
+          <li><a href="#">Program</a></li>
+          <li></li>
+          <li><a href="#">Koupit lístky</a></li>
+          <li></li>
+          <li><a href="#">Rezervace</a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars hamburger"></i>
+    </div>
+    <div class="menu-mobile">
+      <h2 class="burger-title">CinemaGO</h2>
+      <i class="fa-solid fa-xmark close-btn"></i>
+
+      <nav>
+        <ul>
+          <li><a href="films.html">Filmy</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Koupit lístky</a></li>
+          <li><a href="#">Rezervace</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section>
+      <div class="bg-image">
+        <div class="bg-image-overlay">
+
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="program">
+      <div class="filter-section">
+        
+        <form class="filter-form">
+            <h2 class="title">Program kina</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="date"><i class="fa-solid fa-calendar-days"></i> Datum:</label>
+                    <input type="date" id="date" name="date">
+                  </div>
+                  <div class="filter-group">
+                    <label for="movie-type"><i class="fa-solid fa-film"></i> Typ:</label>
+                    <select id="movie-type" name="movie-type">
+                      <option value="all">Vše</option>
+                      <option value="2d">2D</option>
+                      <option value="3d">3D</option>
+                      <option value="imax">IMAX</option>
+                    </select>
+                  </div>
+                  <div class="filter-group">
+                    <label for="language"><i class="fa-solid fa-language"></i> Jazyk:</label>
+                    <select id="language" name="language">
+                      <option value="all">Vše</option>
+                      <option value="cz">Český dabing</option>
+                      <option value="subtitles">Originální znění s titulky</option>
+                    </select>
+                  </div>
+                  <div class="filter-group">
+                    <button type="button" class="btn btn-filter"><i class="fa-solid fa-filter"></i> Filtrovat</button>
+                  </div>
+            </div>
+        </form>
+      </div>
+
+      <div class="movie-row">
+        <img src="../public/images/film_posters/deadpool.png" alt="Deadpool" class="movie-thumb">
+        <div class="movie-details">
+          <h3 class="movie-title">Deadpool</h3>
+          <p><strong><i class="fa-solid fa-clock"></i> Čas: </strong>15.12. 16:00</p>
+          <p><strong><i class="fa-solid fa-glasses"></i> Typ:</strong> 2D</p>
+          <p><strong><i class="fa-solid fa-language"></i> Jazyk:</strong> Originální znění s titulky</p>
+          <p><strong><i class="fa-solid fa-star"></i> Hodnocení:</strong> 8.0/10</p>
+        </div>
+        <p class="movie-caption">
+          Deadpool je drzý antihrdina plný humoru, akce a chaosu. Připravte se na netradiční a zábavný pohled na svět superhrdinů.
+        </p>
+      </div>
+
+      <div class="movie-row">
+        <img src="../public/images/film_posters/smile.jpg" alt="Smile" class="movie-thumb">
+        <div class="movie-details">
+          <h3 class="movie-title">Smile</h3>
+          <p><strong><i class="fa-solid fa-clock"></i> Čas: </strong>15.12. 22:00</p>
+          <p><strong><i class="fa-solid fa-glasses"></i> Typ:</strong> 3D</p>
+          <p><strong><i class="fa-solid fa-language"></i> Jazyk:</strong> Český dabing</p>
+          <p><strong><i class="fa-solid fa-star"></i> Hodnocení:</strong> 7.2/10</p>
+        </div>
+        <p class="movie-caption">
+          Smile je horor plný znepokojivých okamžiků, který vás donutí přemýšlet o tom, co se skrývá za úsměvem.
+        </p>
+      </div>
+
+      <div class="movie-row">
+        <img src="../public/images/film_posters/endgame.jpg" alt="Endgame" class="movie-thumb">
+        <div class="movie-details">
+          <h3 class="movie-title">Endgame</h3>
+          <p><strong><i class="fa-solid fa-clock"></i> Čas: </strong>16.12. 15:30</p>
+          <p><strong><i class="fa-solid fa-glasses"></i> Typ:</strong> IMAX</p>
+          <p><strong><i class="fa-solid fa-language"></i> Jazyk:</strong> Originální znění s titulky</p>
+          <p><strong><i class="fa-solid fa-star"></i> Hodnocení:</strong> 9.3/10</p>
+        </div>
+        <p class="movie-caption">
+          Avengers: Endgame je epické zakončení, kde hrdinové spojují své síly, aby zachránili svět před zničením.
+        </p>
+      </div>
+
+      <div class="movie-row">
+        <img src="../public/images/film_posters/gladiator2.jpg" alt="Gladiator 2" class="movie-thumb">
+        <div class="movie-details">
+          <h3 class="movie-title">Gladiator 2</h3>
+          <p><strong><i class="fa-solid fa-clock"></i> Čas: </strong>17.12. 17:30</p>
+          <p><strong><i class="fa-solid fa-glasses"></i> Typ:</strong> 2D</p>
+          <p><strong><i class="fa-solid fa-language"></i> Jazyk:</strong> Originální znění s titulky</p>
+          <p><strong><i class="fa-solid fa-star"></i> Hodnocení:</strong> 8.4/10</p>
+        </div>
+        <p class="movie-caption">
+          Gladiator 2 přináší dojemný a intenzivní příběh pomsty a odvahy v aréně starověkého Říma.
+        </p>
+      </div>
+      <div class="movie-row">
+        <img src="../public/images/film_posters/deadpool.png" alt="Deadpool" class="movie-thumb">
+        <div class="movie-details">
+          <h3 class="movie-title">Deadpool</h3>
+          <p><strong><i class="fa-solid fa-clock"></i> Čas: </strong>19.12. 16:00</p>
+          <p><strong><i class="fa-solid fa-glasses"></i> Typ:</strong> 2D</p>
+          <p><strong><i class="fa-solid fa-language"></i> Jazyk:</strong> Originální znění s titulky</p>
+          <p><strong><i class="fa-solid fa-star"></i> Hodnocení:</strong> 8.0/10</p>
+        </div>
+        <p class="movie-caption">
+          Deadpool je drzý antihrdina plný humoru, akce a chaosu. Připravte se na netradiční a zábavný pohled na svět superhrdinů.
+        </p>
+      </div>
+
+      <div class="movie-row">
+        <img src="../public/images/film_posters/smile.jpg" alt="Smile" class="movie-thumb">
+        <div class="movie-details">
+          <h3 class="movie-title">Smile</h3>
+          <p><strong><i class="fa-solid fa-clock"></i> Čas: </strong>20.12. 22:00</p>
+          <p><strong><i class="fa-solid fa-glasses"></i> Typ:</strong> 3D</p>
+          <p><strong><i class="fa-solid fa-language"></i> Jazyk:</strong> Český dabing</p>
+          <p><strong><i class="fa-solid fa-star"></i> Hodnocení:</strong> 7.2/10</p>
+        </div>
+        <p class="movie-caption">
+          Smile je horor plný znepokojivých okamžiků, který vás donutí přemýšlet o tom, co se skrývá za úsměvem.
+        </p>
+      </div>
+
+      <div class="movie-row">
+        <img src="../public/images/film_posters/endgame.jpg" alt="Endgame" class="movie-thumb">
+        <div class="movie-details">
+          <h3 class="movie-title">Endgame</h3>
+          <p><strong><i class="fa-solid fa-clock"></i> Čas: </strong>22.12. 15:30</p>
+          <p><strong><i class="fa-solid fa-glasses"></i> Typ:</strong> IMAX</p>
+          <p><strong><i class="fa-solid fa-language"></i> Jazyk:</strong> Originální znění s titulky</p>
+          <p><strong><i class="fa-solid fa-star"></i> Hodnocení:</strong> 9.3/10</p>
+        </div>
+        <p class="movie-caption">
+          Avengers: Endgame je epické zakončení, kde hrdinové spojují své síly, aby zachránili svět před zničením.
+        </p>
+      </div>
+
+      <div class="movie-row">
+        <img src="../public/images/film_posters/gladiator2.jpg" alt="Gladiator 2" class="movie-thumb">
+        <div class="movie-details">
+          <h3 class="movie-title">Gladiator 2</h3>
+          <p><strong><i class="fa-solid fa-clock"></i> Čas: </strong>22.12. 17:30</p>
+          <p><strong><i class="fa-solid fa-glasses"></i> Typ:</strong> 2D</p>
+          <p><strong><i class="fa-solid fa-language"></i> Jazyk:</strong> Originální znění s titulky</p>
+          <p><strong><i class="fa-solid fa-star"></i> Hodnocení:</strong> 8.4/10</p>
+        </div>
+        <p class="movie-caption">
+          Gladiator 2 přináší dojemný a intenzivní příběh pomsty a odvahy v aréně starověkého Říma.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-top">
+      <div class="links">
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="">Program</a>
+            </li>
+            <li>
+              <a href="films.html">Filmy</a>
+            </li>
+            <li>
+              <a href="">Koupit lístky</a>
+            </li>
+            <li>
+              <a href=""> Rezervace</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="registration.html">Registrovat se</a>
+            </li>
+            <li>
+              <a href="login.html">Přihlásit se</a>
+            </li>
+          </ul>
+        </div>
+        <div class="fot-container">
+          <div class="search-container-wrap">
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Vyhledávejte v naší databázi filmů">
+              <button class="search-button">&#128269;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-img">
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
